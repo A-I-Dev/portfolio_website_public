@@ -1,0 +1,42 @@
+%centerContent {
+    max-width: 1280px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+%panelTitle {
+    position: relative;
+    font-size: 32px;
+    text-transform: uppercase;
+    padding: 0 0 16px;
+
+    &:after {
+        content: '';
+        position: absolute;
+        width: 48px;
+        bottom: 0px;
+        left: calc(50% - 24px);
+        height: 2px;
+        background: $yellow;
+    }
+}
+%panelDesc {
+    font-size: 20px;
+    line-height: 1.6;
+    margin: 24px auto 0;
+    font-weight: 300;
+    max-width: 480px;
+}
+%panelItemTitle {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+%panelItemDesc {
+    font-size: 16px;
+    line-height: 1.6;
+}
+@mixin panelItemList($gridGap) {
+    display: grid;
+    grid-gap: $gridGap;
+    margin: 48px 0 0;
+}

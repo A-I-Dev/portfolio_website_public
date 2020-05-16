@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Main Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- MY version of Destyle.css --> 
+    <link rel="stylesheet" href="css/destyle++.css">
+    
+    <!-- Mobile first main styling file -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Media queries styling file/s -->
+    <link rel="stylesheet" href="css/mediaQs.css">
+
+    <title>A.leks I.vanov | Front-end Development & UI/UX Design</title>
+</head>
+<body>
+    <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+
+    <!-- MAIN HEADER -->
+    <header id="main-header">
+        <nav id="site-nav">
+            <div class="logo">
+                <a href="index.html" class="logo-link">
+                    <img src="./img/logo.png" alt="logo" class="logo-img">
+                </a>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="work.html" class="nav-link">Work</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link current">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- CONTACT FORM PANEL -->
+    <section id="form-panel">
+        <div class="content">
+            <h2 class="fp-title">Contact me</h2>
+            <p class="fp-desc">Here is how you can reach me</p>
+            <form id="contact-form" method="POST" data-netlify="true">
+                <input class="cf-input" type="text" name="name" id="" placeholder="Name">
+                <input class="cf-input" type="text" name="subject" id="" placeholder="Subject">
+                <input class="cf-input" type="email" name="email" id="" placeholder="Email">
+                <input class="cf-input" type="phone" name="phone" id="" placeholder="Phone Number">
+                <textarea class="cf-textarea" name="message" id="" cols="30" rows="10" placeholder="Enter Message"></textarea>
+                <div class="cf-btn-wrap">
+                    <button type="submit" class="cf-btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- CONTACT INFO PANEL -->
+    <section id="info-panel">
+        <ul class="ip-list">
+            <li class="ip-item">
+                <i class="fas fa-envelope fa-2x ip-icon"></i>
+                <h3 class="ip-title">Email</h3>
+                <p class="ip-text">someone@something.com</p>
+            </li>
+            <li class="ip-item">
+                <i class="fas fa-phone fa-2x ip-icon"></i>
+                <h3 class="ip-title">Phone</h3>
+                <p class="ip-text">(+359)888/888-888</p>
+            </li>
+            <li class="ip-item">
+                <i class="fas fa-address-card fa-2x ip-icon"></i>
+                <h3 class="ip-title">Address</h3>
+                <p class="ip-text">50 Main St. Boston MA</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- AD PANEL -->
+    <section id="ad-panel">
+        <p class="ap-desc">Let's Start Your Next Project</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="main-footer">
+        <div class="content">
+            <ul class="socials-list">
+                <li class="sl-item">
+                    <a href="#" class="sli-link" target="_blank">
+                        <i class="fab fa-facebook sli-icon"></i>
+                    </a>
+                </li>
+                <li class="sl-item">
+                    <a href="#" class="sli-link" target="_blank">
+                        <i class="fab fa-yahoo sli-icon"></i>
+                    </a>
+                </li>
+                <li class="sl-item">
+                    <a href="#" class="sli-link" target="_blank">
+                        <i class="fab fa-linkedin sli-icon"></i>
+                    </a>
+                </li>
+                <li class="sl-item">
+                    <a href="#" class="sli-link" target="_blank">
+                        <i class="fab fa-viber sli-icon"></i>
+                    </a>
+                </li>
+            </ul>
+            <p class="copyright">
+                Copyright &copy; 2020. All Rights Reserved
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+    <!-- Font Awesome CDN (!!!remove if unnecessary!!!) -->
+    <script src="https://kit.fontawesome.com/9ee6b26067.js" crossorigin="anonymous"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+</html>

@@ -1,0 +1,511 @@
+#main-header #site-nav, #main-footer .content, #specialize-panel .content, #process-panel .content, #aboutme-panel .content, #awards-panel .ap-list, #techskills-panel .content, #company-logos-panel .clp-list, #testimonials-panel .content, #work-panel .content, #form-panel .content, #info-panel .ip-list {
+  max-width: 1280px;
+  padding: 0 20px;
+  margin: 0 auto; }
+
+#specialize-panel .sp-title, #process-panel .pp-title, #aboutme-panel .ap-title, #techskills-panel .tp-title, #testimonials-panel .tp-title, #work-panel .wp-title, #form-panel .fp-title {
+  position: relative;
+  font-size: 32px;
+  text-transform: uppercase;
+  padding: 0 0 16px; }
+  #specialize-panel .sp-title:after, #process-panel .pp-title:after, #aboutme-panel .ap-title:after, #techskills-panel .tp-title:after, #testimonials-panel .tp-title:after, #work-panel .wp-title:after, #form-panel .fp-title:after {
+    content: '';
+    position: absolute;
+    width: 48px;
+    bottom: 0px;
+    left: calc(50% - 24px);
+    height: 2px;
+    background: #ffbc00; }
+
+#specialize-panel .sp-desc, #process-panel .pp-desc, #aboutme-panel .ap-desc, #testimonials-panel .tp-desc, #work-panel .wp-desc, #form-panel .fp-desc {
+  font-size: 20px;
+  line-height: 1.6;
+  margin: 24px auto 0;
+  font-weight: 300;
+  max-width: 480px; }
+
+#specialize-panel .spi-title, #process-panel .ppi-title, #awards-panel .api-title, #info-panel .ip-title {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700; }
+
+#specialize-panel .spi-desc, #process-panel .ppi-desc, #aboutme-panel .ap-text-desc, #awards-panel .api-desc, #info-panel .ip-text {
+  font-size: 16px;
+  line-height: 1.6; }
+
+body {
+  font-family: "Dosis", sans-serif;
+  color: #000; }
+
+#main-header {
+  background: url(../img/showcase.jpg) no-repeat top center;
+  border-bottom: 3px solid #ffbc00; }
+  #main-header .hero-content {
+    display: none; }
+  #main-header #site-nav {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px; }
+  #main-header .logo-img {
+    width: 60px; }
+  #main-header .nav-list {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 0; }
+  #main-header .nav-link {
+    position: relative;
+    display: block;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 12px; }
+    #main-header .nav-link:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 12px;
+      right: 12px;
+      height: 3px;
+      background: #ffbc00;
+      opacity: 0; }
+    #main-header .nav-link.current:after, #main-header .nav-link:hover:after {
+      opacity: 1; }
+
+#main-footer {
+  background: #333;
+  padding: 20px 0; }
+  #main-footer .content {
+    text-align: center;
+    color: #fff; }
+  #main-footer .socials-list {
+    display: flex;
+    justify-content: center; }
+  #main-footer .sl-item {
+    margin: 0 6px; }
+  #main-footer .sli-link {
+    display: block;
+    border: 2px solid #fff;
+    border-radius: 50%; }
+  #main-footer .sli-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 18px; }
+  #main-footer .copyright {
+    margin: 16px 0 0; }
+
+#specialize-panel {
+  padding: 64px 0; }
+  #specialize-panel .content {
+    text-align: center; }
+  #specialize-panel .sp-list {
+    display: grid;
+    grid-gap: 24px;
+    margin: 48px 0 0; }
+  #specialize-panel .sp-item {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #f4f4f4; }
+    #specialize-panel .sp-item:last-child {
+      border-bottom: 0; }
+  #specialize-panel .spi-icon {
+    color: #ffbc00; }
+  #specialize-panel .spi-title {
+    margin: 10px 0 0; }
+  #specialize-panel .spi-desc {
+    margin: 10px auto 0;
+    max-width: 320px; }
+
+#stats-panel .sp-item {
+  padding: 32px;
+  text-align: center;
+  background: #f4f4f4; }
+  #stats-panel .sp-item:nth-child(even) {
+    background: #ccc; }
+
+#stats-panel .spi-title {
+  margin: 16px 0 0;
+  font-size: 24px; }
+
+#stats-panel .spi-desc {
+  margin: 24px 0 0;
+  font-size: 32px;
+  font-weight: 700; }
+
+#process-panel {
+  padding: 64px 0; }
+  #process-panel .content {
+    text-align: center; }
+  #process-panel .pp-list {
+    display: grid;
+    grid-gap: 48px;
+    margin: 48px 0 0; }
+  #process-panel .ppi-icon {
+    position: relative;
+    background: #333;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    width: 134px;
+    height: 134px;
+    margin: auto;
+    justify-content: center;
+    align-items: center; }
+    #process-panel .ppi-icon .pp-step {
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-radius: 50%;
+      background: #ffbc00;
+      font-size: 28px;
+      width: 48px;
+      height: 48px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+  #process-panel .ppi-title {
+    margin: 32px 0 0; }
+  #process-panel .ppi-desc {
+    margin: 5px auto 0;
+    max-width: 320px; }
+
+#aboutme-panel {
+  padding: 64px 0; }
+  #aboutme-panel .content {
+    text-align: center; }
+  #aboutme-panel .ap-content {
+    margin: 32px 0 0; }
+  #aboutme-panel .ap-text-wrap {
+    margin: 16px 0 0;
+    background: #f4f4f4;
+    border-left: 3px solid #ffbc00;
+    padding: 16px; }
+  #aboutme-panel .ap-text-title {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700; }
+  #aboutme-panel .ap-text-desc {
+    margin: 10px 0 0; }
+
+#awards-panel {
+  padding: 0 0 64px; }
+  #awards-panel .ap-list {
+    text-align: center;
+    display: grid;
+    grid-gap: 32px; }
+  #awards-panel .api-icon {
+    color: #ffbc00; }
+  #awards-panel .api-title {
+    margin-top: 16px; }
+  #awards-panel .api-desc {
+    margin-top: 8px; }
+
+#techskills-panel {
+  padding: 64px 0;
+  background: #333;
+  color: #fff; }
+  #techskills-panel .content {
+    text-align: center; }
+  #techskills-panel .tp-list {
+    margin: 24px 0 0;
+    text-align: left; }
+  #techskills-panel .tp-label {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 16px 0 0; }
+  #techskills-panel .tp-value {
+    position: relative;
+    color: #ffbc00;
+    background: #f4f4f4;
+    border-radius: 3px;
+    font-size: 18px;
+    margin: 4px 0 0; }
+    #techskills-panel .tp-value:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      background: #ffbc00;
+      border-radius: 3px; }
+    #techskills-panel .tp-value.twentyP:before {
+      width: 20%; }
+    #techskills-panel .tp-value.fourtyP:before {
+      width: 40%; }
+    #techskills-panel .tp-value.sixtyP:before {
+      width: 60%; }
+    #techskills-panel .tp-value.eightyP:before {
+      width: 80%; }
+    #techskills-panel .tp-value.hundredP:before {
+      width: 100%; }
+
+#company-logos-panel {
+  background: #f4f4f4;
+  text-align: center;
+  padding: 64px 0; }
+  #company-logos-panel .clp-list {
+    display: grid;
+    grid-gap: 32px; }
+
+#testimonials-panel {
+  padding: 64px 0; }
+  #testimonials-panel .content {
+    text-align: center; }
+  #testimonials-panel .tp-list {
+    margin-top: 32px;
+    display: grid;
+    grid-gap: 16px; }
+  #testimonials-panel .tp-item {
+    text-align: left; }
+  #testimonials-panel .tpi-desc {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    line-height: 1.6; }
+  #testimonials-panel .tpi-client {
+    display: flex;
+    align-items: center;
+    margin: 16px 0 0; }
+  #testimonials-panel .tpi-img {
+    border-radius: 50%;
+    width: 48px; }
+  #testimonials-panel .client-name {
+    padding-left: 10px; }
+
+#work-panel {
+  padding: 64px 0; }
+  #work-panel .content {
+    text-align: center; }
+  #work-panel .wp-list {
+    margin: 32px 0 0;
+    display: grid;
+    grid-gap: 16px; }
+  #work-panel .wp-link {
+    display: block; }
+  #work-panel .wp-img-title {
+    display: none; }
+
+#form-panel {
+  padding: 64px 0; }
+  #form-panel .content {
+    text-align: center; }
+  #form-panel #contact-form {
+    margin: 32px 0 0;
+    display: grid;
+    grid-gap: 16px; }
+  #form-panel .cf-input,
+  #form-panel .cf-textarea {
+    display: block;
+    width: 100%;
+    border: 1px solid #ccc;
+    text-align: left;
+    padding: 8px 16px; }
+  #form-panel .cf-btn {
+    margin: 64px 0 0;
+    background: #333;
+    color: #fff;
+    padding: 12px 48px; }
+
+#info-panel {
+  padding: 64px 0;
+  background: #333;
+  color: #fff;
+  text-align: center; }
+  #info-panel .ip-list {
+    display: grid; }
+  #info-panel .ip-item {
+    padding: 24px 0 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+    #info-panel .ip-item:last-child {
+      border: 0; }
+  #info-panel .ip-title {
+    margin: 12px 0 0; }
+  #info-panel .ip-text {
+    margin: 8px 0 0; }
+
+#ad-panel {
+  padding: 64px 20px;
+  background: #ffbc00;
+  color: #fff;
+  text-align: center; }
+  #ad-panel .ap-desc {
+    font-size: 36px;
+    line-height: 1.6; }
+
+@media (min-width: 480px) {
+  #main-header #site-nav {
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  #main-header .nav-list {
+    margin: 0; }
+  #specialize-panel .sp-list {
+    grid-template-columns: repeat(2, 1fr); }
+  #specialize-panel .sp-item {
+    border: 0; }
+  #stats-panel .sp-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+  #stats-panel .sp-item:nth-child(3) {
+    order: 4; }
+  #process-panel .pp-list {
+    grid-template-columns: repeat(2, 1fr); }
+  #awards-panel .ap-list {
+    grid-gap: 24px;
+    grid-template-columns: repeat(3, 1fr); }
+  #company-logos-panel .clp-list {
+    grid-template-columns: repeat(2, 1fr); }
+  #testimonials-panel .tp-list {
+    grid-template-columns: repeat(2, 1fr); }
+  #work-panel .wp-list {
+    grid-template-columns: repeat(2, 1fr); }
+  #form-panel #contact-form {
+    grid-template-columns: repeat(2, 1fr); }
+  #form-panel .cf-textarea,
+  #form-panel .cf-btn-wrap {
+    grid-column: 1 / span 2; }
+  #info-panel .ip-list {
+    grid-gap: 12px;
+    grid-template-columns: repeat(3, 1fr); }
+  #info-panel .ip-item {
+    border: 0; } }
+
+@media (min-width: 768px) {
+  #main-footer .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row-reverse; }
+  #main-footer .copyright {
+    margin: 0; }
+  #main-header.home-page {
+    min-height: 550px;
+    height: 100vh; }
+    #main-header.home-page .hero-content {
+      display: block;
+      flex-direction: column;
+      padding: 140px 0;
+      text-align: center;
+      color: #fff; }
+    #main-header.home-page .hero-title {
+      font-size: 64px; }
+    #main-header.home-page .hero-desc {
+      font-size: 20px;
+      margin: 8px 0 0; }
+    #main-header.home-page .hero-btn {
+      display: inline-block;
+      background: #fff;
+      color: #000;
+      padding: 16px 32px;
+      margin: 32px 0 0; }
+  #stats-panel .sp-item {
+    padding: 64px 32px; }
+  #aboutme-panel .ap-content {
+    display: grid;
+    grid-template-columns: 5fr 6fr;
+    grid-gap: 16px; }
+  #aboutme-panel .ap-text-wrap {
+    margin: 0;
+    text-align: left; }
+  #company-logos-panel .clp-list {
+    grid-template-columns: repeat(4, 1fr); }
+  #techskills-panel .tp-label,
+  #techskills-panel .tp-value {
+    font-size: 24px; }
+  #work-panel .wp-list {
+    grid-gap: 0; }
+  #form-panel .cf-input,
+  #form-panel .cf-textarea {
+    padding: 12px 24px; } }
+
+@media (min-width: 992px) {
+  #main-header .nav-link:after {
+    transition: opacity .3s ease-in-out; }
+  #main-header .nav-link:hover:after {
+    opacity: 1; }
+  #main-header.home-page .hero-btn {
+    transition: background .3s ease-in-out, color .15s ease-in-out; }
+    #main-header.home-page .hero-btn:hover {
+      background: #ffbc00;
+      color: #fff; }
+  #main-footer .sli-link {
+    transition: background-color .3s ease-in-out, border-color .3s ease-in-out; }
+    #main-footer .sli-link:hover {
+      background-color: #ffbc00;
+      border-color: #ffbc00; }
+  #specialize-panel .sp-list {
+    grid-template-columns: repeat(4, 1fr); }
+  #stats-panel .sp-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); }
+  #stats-panel .sp-item:nth-child(3) {
+    order: initial; }
+  #process-panel .pp-list {
+    grid-template-columns: repeat(4, 1fr); }
+  #awards-panel .ap-list {
+    grid-gap: 36px; }
+  #testimonials-panel .tp-list {
+    grid-template-columns: repeat(4, 1fr); }
+  #work-panel .wp-link {
+    position: relative;
+    overflow: hidden; }
+    #work-panel .wp-link .wp-img {
+      transition: transform .9s ease-in-out; }
+    #work-panel .wp-link .wp-img-title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 200%;
+      height: 200%;
+      color: #fff;
+      background: rgba(255, 188, 0, 0.8);
+      transform: translateX(-100%) translateY(-100%) rotate(-45deg);
+      transition: transform .45s ease-in-out; }
+      #work-panel .wp-link .wp-img-title .wp-img-type,
+      #work-panel .wp-link .wp-img-title .wp-img-name {
+        transform: scale(0) rotate(45deg);
+        transition: transform .45s ease-in-out .07s; }
+      #work-panel .wp-link .wp-img-title .wp-img-type {
+        font-size: 28px; }
+      #work-panel .wp-link .wp-img-title .wp-img-name {
+        font-size: 48px;
+        margin: 42px 0 0; }
+    #work-panel .wp-link:hover .wp-img {
+      transform: scale(1.3); }
+    #work-panel .wp-link:hover .wp-img-title {
+      transform: translateX(-25%) translateY(-25%) rotate(-45deg); }
+      #work-panel .wp-link:hover .wp-img-title .wp-img-type,
+      #work-panel .wp-link:hover .wp-img-title .wp-img-name {
+        transform: scale(1) rotate(45deg); }
+  #form-panel .cf-btn {
+    transition: background-color .3s ease-in-out; }
+    #form-panel .cf-btn:hover {
+      background-color: #ffbc00; }
+  #info-panel .ip-list {
+    grid-gap: 36px; } }
+
+@media (min-width: 1200px) {
+  #main-header.home-page .hero-content {
+    padding: 240px 0; }
+  #main-header.home-page .hero-title {
+    font-size: 86px; }
+  #main-header.home-page .hero-desc {
+    margin: 16px 0 0; }
+  #main-header.home-page .hero-btn {
+    padding: 16px 32px;
+    margin: 48px 0 0; }
+  #work-panel {
+    min-height: calc(100vh - 163px); }
+  #form-panel .cf-btn {
+    padding: 16px 64px; }
+  #ad-panel {
+    padding: 96px 20px; }
+    #ad-panel .ap-desc {
+      font-size: 64px; } }
